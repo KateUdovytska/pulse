@@ -1,0 +1,124 @@
+@media (max-width: 1200px){
+    .header {
+        &__logo {
+            width: 220px;
+        }
+        &__phone{
+            font-size: 16px;
+        }
+    }
+    .button {
+        width: 155px;
+        &_main {
+            width: 280px;
+            font-size: 15px;
+        }
+    }
+    .promo{
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader{
+            font-size: 22px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 991px){
+    .header {
+        &__logo {
+            width: 180px;
+        }
+        &__phone{
+            font-size: 16px;
+        }
+    }
+    .promo {
+        min-height: 615px;
+        padding: 20px;
+        &__header {
+            font-size: 35px;
+        }
+        &__subheader{
+            font-size: 19px;
+            line-height: 20px;
+            margin-top: 12px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+        &__icon {
+            font-size: 12px;
+        }
+    }
+    .button {
+        &_main {
+            width: 280px;
+            font-size: 14px;
+        }
+    }
+    .advantages__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .header {
+        flex-direction: column;
+        &__phone {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 45px;
+        }
+        &__header {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__subheader{
+            text-align: center;
+            font-size: 12px;
+        }
+        &__icons {
+            width: 300px;
+        }
+    }
+    .button {
+        width: 138px;
+        font-size: 10px;
+        &_main {
+            width: 280px;
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+}
