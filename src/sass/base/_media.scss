@@ -112,6 +112,14 @@
             align-items: center;
         }
     }
+    .carousel {
+        &__inner {
+            width: 480px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px){
@@ -150,6 +158,15 @@
             display: none;
         }
     }
+    .carousel {
+        &__inner {
+            width: 300px;
+            width: 300px;
+            // img {
+            //     width: 100%;
+            // }
+        }
+    }
     .button {
         width: 138px;
         font-size: 10px;
@@ -174,4 +191,5 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+
 }
