@@ -84,6 +84,11 @@
             font-size: 16px;
         }
     }
+    .catalog {
+        &__content {
+            padding: 0 40px;
+        }
+    }
     .title {
         &_left {
             margin-top: 50px;
@@ -112,6 +117,12 @@
             align-items: center;
         }
     }
+    .consultation {
+        padding-bottom: 70px;
+        &__descr {
+            text-align: center;
+        }
+    }
     .carousel {
         &__inner {
             width: 480px;
@@ -119,6 +130,28 @@
                 width: 100%;
             }
         }
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 45px;
+            font-size: 14px;
+            line-height: 43px;
+        }
+        &__content {
+            justify-content: center;
+        }
+    }
+    .title {
+        font-size: 24px;
+        &_left {
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 36px;
     }
 }
 
@@ -152,19 +185,22 @@
         &__descr {
             font-size: 14px;
             margin-top: 30px;
-            text-align: center;
-        }
-        br {
-            display: none;
         }
     }
     .carousel {
         &__inner {
             width: 300px;
             width: 300px;
-            // img {
-            //     width: 100%;
-            // }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 90px;
+            line-height: 18px;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     .button {
@@ -182,14 +218,8 @@
     .title {
         font-size: 20px;
         &_left {
-            text-align: center;
             line-height: 25px;
         }
-    }
-
-    .feed-form {
-        margin: 0 auto;
-        margin-top: 36px;
     }
 
 }
