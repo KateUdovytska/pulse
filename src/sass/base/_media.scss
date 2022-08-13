@@ -32,6 +32,12 @@
             font-size: 15px;
         }
     }
+    .footer {
+        &__info {
+            width: 430px;
+            height: 250px;
+        }
+    }
     .title {
         font-size: 28px;
     }
@@ -92,6 +98,24 @@
             font-size: 14px;
         }
 
+    }
+    .footer {
+        &__info {
+            padding: 42px 60px 60px 60px;
+            width: 340px;
+            
+        }
+        &__address {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+        }
     }
     .catalog {
         &__content {
@@ -234,6 +258,11 @@
             text-align: center;
         }
 
+    }
+    .footer {
+        &__info {
+            width: 100%;
+        }
     }
     .button {
         width: 138px;
