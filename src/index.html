@@ -26,7 +26,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+380932189392" class="header__phone">+38 (093)-218-93-92</a>
-                    <button class="button">
+                    <button class="button" data-modal="consultation">
                         заказать звонок
                     </button>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="promo__icon"><img src="icons/messages-64.png" alt="messages">
                         Ответим на все вопросы</div>
                 </div>
-                <button class="button  button_main">
+                <button class="button  button_main" data-modal="consultation">
                     заказать кОНСУЛЬТАЦИЮ
                 </button>
                 <div class="promo__link">
@@ -147,7 +147,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT3</div>
                     <div class="catalog-item__descr">
                         Для первых шагов в тренировках, основанных на сердечном ритме
                     </div>
@@ -201,7 +201,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT12</div>
                     <div class="catalog-item__descr">
                         Для первых шагов в тренировках, основанных на сердечном ритме
                     </div>
@@ -228,7 +228,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT14</div>
                     <div class="catalog-item__descr">
                         Для первых шагов в тренировках, основанных на сердечном ритме
                     </div>
@@ -255,7 +255,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometer.png" alt="pulsometr" class="catalog-item__img">
-                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT13</div>
                     <div class="catalog-item__descr">
                         Для первых шагов в тренировках, основанных на сердечном ритме
                     </div>
@@ -468,16 +468,50 @@
     </section>
     <footer class="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4923887968394!2d30.52326945!3d50.45055505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f8b6e3c3%3A0xb528dc4d6dadc4f8!2z0JzQsNC50LTQsNC9INCd0LXQt9Cw0LLQuNGB0LjQvNC-0YHRgtC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1659697303385!5m2!1sru!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="footer__info">
-        <address class="footer__address">Майдан Независимости, Киев</address>
-        <a href="tel:+380932189392" class="footer__phone">+38 (093)-218-93-92</a>
-        <div class="footer__social">
-            <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
-            <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
-            <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+        <div class="footer__info">
+            <address class="footer__address">Майдан Независимости, Киев</address>
+            <a href="tel:+380932189392" class="footer__phone">+38 (093)-218-93-92</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times; </div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input required placeholder="Ваше имя" type="tel" name="name" id="">
+                <input required placeholder="Ваш телефон" type="number" name="phone" id="">
+                <input required placeholder="Ваш E-mail" type="email" name="email" id="">                
+                <button class="button button_submit">
+                    ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+                </button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times; </div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input required placeholder="Ваше имя" type="tel" name="name" id="">
+                <input required placeholder="Ваш телефон" type="number" name="phone" id="">
+                <input required placeholder="Ваш E-mail" type="email" name="email" id="">                
+                <button class="button button_submit">
+                    КУПИТЬ
+                </button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times; </div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
-</footer>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>

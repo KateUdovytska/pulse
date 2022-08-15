@@ -135,6 +135,12 @@
         }
 
     }
+    .modal {
+        width: 350px;
+        &__descr {
+            font-size: 13px;
+        } 
+    }
     
 
 }
@@ -282,5 +288,19 @@
             line-height: 25px;
         }
     }
-
+    .modal {
+        width: 295px;
+        padding: 35px 30px;
+        &__descr{
+            font-size: 11px;
+        }
+        &__close {
+            top: 5px;
+            right: 5px;
+        }
+        .feed-form {
+            width: 230px;
+        }
+        
+    }
 }
